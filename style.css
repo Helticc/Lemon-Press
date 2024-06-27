@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    position: fixed;
+    background-color: white;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: space-between;
+    top: 20px;
+    left: 23px;
+}
+
+.options {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 20px;
+    left: 220px;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.songul {
+    position: fixed;
+    display: flex;
+    right: 120px;
+    top: 20px;
+}
+
+.button {
+    position: fixed;
+    background-color: #0040d4;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    right: 20px;
+    top: 10px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
