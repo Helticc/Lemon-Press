@@ -1,33 +1,113 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+header.shadow {
+    box-shadow: 0 5px 10px rgba(0,0,0,.03);
+}
+
+header {
+    z-index: 1030;
+    top: 0;
+    position: fixed;
+    background-color: #fff;
+    padding-left: 28px;
+    padding-right: 28px;
+    height: 65px;
+}
+
+header {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.shadow {
+    box-shadow: 0 10px 10px rgba(0,0,0,.03);
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
 
 .logo {
     position: fixed;
-    background-color: white;
-    background-repeat: repeat;
-    display: flex;
-    justify-content: space-between;
-    top: 20px;
-    left: 23px;
+    top: 25px;
+    left: 27px;
 }
 
 .options {
     position: fixed;
     display: flex;
     flex-direction: row;
-    top: 20px;
+    font-size: 14px;
+    top: 27px;
     left: 220px;
     text-decoration: none;
     justify-content: space-between;
 }
 
+.a-down {
+    position: relative;
+    display: inline-block;
+}
+
+.a-down-content {
+    display: none;
+    position: absolute;
+    background-color: f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.a-down:hover {
+    color: blue;
+    cursor: pointer;
+}
+.b:hover {
+    color: blue;
+    cursor: pointer;
+}
+.c:hover {
+    color: blue;
+    cursor: pointer;
+}
+.d:hover {
+    color: blue;
+    cursor: pointer;
+}
+.e:hover {
+    color: blue;
+    cursor: pointer;
+}
+
 .songul {
     position: fixed;
     display: flex;
-    right: 120px;
-    top: 20px;
+    right: 200px;
+    top: 27px;
+    font-size: 15px;
+    color: #0040d4;
 }
 
 .button {
@@ -36,7 +116,7 @@
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 12px 16px;
+    padding: 12px 17px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -45,10 +125,264 @@
     cursor: pointer;
     right: 20px;
     top: 10px;
+    transition-duration: 0.1s;
+}
+
+.button1:hover {
+    background-color: grey;
+    color: rgb(222, 222, 241);
 }
 
 .nav {
     display: flex;
     flex-direction: row;
+    gap: 50px;
+}
+
+.box {
+    position: fixed;
+    background-color: #F5F8FC;
+    opacity: 0.5;
+    height: 30px;
+    width: 30px;
+    right: 150px;
+    top: 20px;
+}
+
+.search {
+    display: flex;
+    position: fixed;
+    right: 150px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.back {
+    background-color: #F5F8FC; 
+    height: 30px; 
+    width: 30px; 
+    border-radius: 50px;
+}
+
+.lemonade {
+    display: flex;
+    position: absolute;
+    background-color: #fbda04;;
+    height: 39px;
+    width: 90px;
+    font-size: 11px;
+    justify-content: center;
     align-items: center;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    top: 90px;
+    left: 516px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    animation-name: lemon;
+    animation-duration: 0.6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    cursor: pointer;
+}
+
+@keyframes lemon {
+    0% {background-color: #fbda04;; color: black;}
+    100% {background-color: #fbda04;; color: rgb(107, 107, 107);}
+}
+
+.rec {
+    display: flex;
+    position: absolute;
+    height: 39px;
+    width: 1082px;
+    font-size: 15px;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    top: 90px;
+    left: 606px;
+    background-color: rgb(240, 245, 248);
+    cursor: pointer;
+}
+
+.news-container {
+    width: 774px;
+    height: 517px;
+    position: relative;
+    background-image: image-set("shrek.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    top: 155px;
+    left: -216px;
+    cursor: pointer;
+}
+
+.news {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.news-container:hover .news {
+    opacity: 0.5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.news-border {
+    position: absolute;
+    height: 125px;
+    width: 774px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(245, 245, 245);
+    border-style: solid;
+    border-width: 1px;
+    top: 444px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+
+.news-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 17px;
+    top: 16px;
+    left: 27px;
+    cursor: pointer;
+}
+
+.news-info:hover {
+    color: rgb(56, 56, 56);
+    cursor: pointer;
+}
+
+.sidebar {
+    background: white;
+    position: absolute;
+    height: 569px;
+    width: 378px;
+    right: 555px;
+    top: 155px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: rgba(245,245,245);
+    border-style: solid;
+    border-width: 1px;
+    transition: opacity 0.5s ease;
+}
+
+.news-info2-dog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    left: 18px;
+    bottom: 280px;
+    background-color: white;
+}
+
+.news-info3-dog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    gap: 15px;
+    left: 18px;
+    bottom: 140px;
+    background-color: white;
+}
+
+.news-info4-dog {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    gap: 15px;
+    left: 18px;
+    bottom: 20px;
+    background-color: white;
+}
+
+.dog-image {
+    background-color: black;
+}
+
+.dog-image:hover {
+    transition: opacity 0.5s ease;
+    opacity: 0.5;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.Elon-Musk {
+    position: relative; 
+    width: 380px;
+    height: 380px;
+    left: 911px;
+    top: 224px;
+    background: black;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Elon-Musk::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: inset 0 0 50px 0 rgba(0,0,0.9);
+    width: 380px;
+    height: 380px;
+    border-radius: 10px;
+}
+
+.Elon-Musk:hover {
+    opacity: 0.5;
+    background-color: black;
+}
+
+.scroll-news {
+    position: relative;
+    background: black;
+    height: 380px;
+    width: 380px;
+    left: 518px;
+    top: -156px;
+    border-radius: 10px;
+}
+
+.E-text {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
 }
