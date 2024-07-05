@@ -188,7 +188,7 @@ header {
 
 @keyframes lemon {
     0% {background-color: #fbda04;; color: black;}
-    100% {background-color: #fbda04;; color: rgb(107, 107, 107);}
+    100% {background-color: #fff08c;; color: rgb(107, 107, 107);}
 }
 
 .rec {
@@ -212,7 +212,7 @@ header {
     width: 774px;
     height: 517px;
     position: relative;
-    background-image: image-set("shrek.png");
+    background-image: image-set("main.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -283,7 +283,7 @@ header {
 .sidebar {
     background: white;
     position: absolute;
-    height: 569px;
+    height: 580px;
     width: 378px;
     right: 555px;
     top: 155px;
@@ -303,7 +303,7 @@ header {
     flex-direction: column;
     gap: 15px;
     left: 18px;
-    bottom: 280px;
+    bottom: 270px;
     background-color: white;
 }
 
@@ -314,7 +314,7 @@ header {
     background: white;
     gap: 15px;
     left: 18px;
-    bottom: 140px;
+    bottom: 145px;
     background-color: white;
 }
 
@@ -327,10 +327,6 @@ header {
     left: 18px;
     bottom: 20px;
     background-color: white;
-}
-
-.dog-image {
-    background-color: black;
 }
 
 .dog-image:hover {
@@ -385,4 +381,134 @@ header {
     display: flex;
     gap: 8px;
     flex-direction: column;
+}
+
+.sidebar1 {
+    background: white;
+    position: absolute;
+    height: 380px;
+    width: 378px;
+    right: 555px;
+    top: 741px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color: rgba(245,245,245);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.email-Section {
+    position: absolute;
+    display: flex;
+    height: 229px;
+    width: 1090px;
+    background: white;
+    left: 40px;
+    bottom: 44px;
+    border-radius: 10px;
+}
+
+.background-image-email {
+    position: absolute;
+    left: 515px;
+    bottom: -390px
+}
+
+.email-button {
+    position: absolute;
+    background-color: #0040d4;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    padding: 12px 17px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    right: 318px;
+    top: 77px;
+    transition-duration: 0.1s;
+    height: 62px;
+    width: 135px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.email-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    right: 280px;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.desc-text {
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: column;
+    top: 130px;
+    align-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .lemonade {
+        width: 100%;
+    }
+
+    .rec {
+        width: 100%;
+    }
+
+    .news-container {
+        width: 100%;
+    }
+
+    .news {
+        width: 100%;
+    }
+
+    .news-border {
+        width: 100%;
+    }
+
+    .news-info {
+        width: 100%;
+    }
+}
+
+.news-container-articles {
+    position: absolute;
+}
+
+.news-article-box {
+    position: absolute;
+    height: 201px;
+    width: 500px;
+    background: rgb(255, 255, 255);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(194, 194, 194, 0.59);
+    top: 0px;
+    left: 300px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.news-articles-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
